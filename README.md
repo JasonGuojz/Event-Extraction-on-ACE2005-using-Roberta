@@ -1,6 +1,6 @@
 # Event Extraction on ACE2005 using Roberta
 
-Using CRF do trigger detection，then do argument detection based on the trigger detection result。
+1. One CRF layer for trigger detection; 2. Concatenate trigerEmbd, typeEmbd and posEmbd based on the result of trigger word recognition; 3. Use distinct CRF layers for each event type to predict arguments and argument roles.
 
 ### parameters
 
